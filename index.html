@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MONO — каталог кофе</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="catalog">
+    <header class="catalog__header">
+      <div class="catalog__intro">
+        <p class="catalog__eyebrow">Обжарка каждую неделю</p>
+        <h1 class="catalog__title">Свежая <em>обжарка</em></h1>
+        <p class="catalog__desc">
+          Отборные зёрна из Эфиопии, Колумбии и Бразилии.
+          Доставка по всей России за 2–4 дня.
+        </p>
+      </div>
+      <nav class="catalog__filters" aria-label="Фильтры каталога">
+        <button class="filter filter--active" type="button">Все</button>
+        <button class="filter" type="button">Эспрессо</button>
+        <button class="filter" type="button">Фильтр</button>
+        <button class="filter" type="button">Декаф</button>
+      </nav>
+    </header>
+
+    <ul class="catalog__grid">
+      <li class="card">
+        <article class="card__inner">
+          <a href="#" class="card__link" aria-label="Эфиопия Yirgacheffe, 250 г">
+            <figure class="card__media card__media--ethiopia">
+              <span class="card__badge">Новинка</span>
+              <img
+                src="https://images.unsplash.com/photo-1559056199-641a0ac8b55e?w=600&h=750&fit=crop&q=80"
+                alt="Пачка кофе Эфиопия Yirgacheffe"
+                width="600"
+                height="750"
+                loading="lazy"
+              >
+            </figure>
+            <div class="card__body">
+              <span class="card__origin">Эфиопия</span>
+              <h2 class="card__name">Yirgacheffe</h2>
+              <p class="card__notes">жасмин · бергамот · персик</p>
+              <div class="card__footer">
+                <span class="card__price">890 ₽</span>
+                <span class="card__weight">250 г</span>
+              </div>
+            </div>
+          </a>
+          <button class="card__btn" type="button">В корзину</button>
+        </article>
+      </li>
+
+      <li class="card">
+        <article class="card__inner">
+          <a href="#" class="card__link" aria-label="Колумбия Huila, 250 г">
+            <figure class="card__media card__media--colombia">
+              <img
+                src="https://images.unsplash.com/photo-1447933601403-0c6688de566e?w=600&h=750&fit=crop&q=80"
+                alt="Пачка кофе Колумбия Huila"
+                width="600"
+                height="750"
+                loading="lazy"
+              >
+            </figure>
+            <div class="card__body">
+              <span class="card__origin">Колумбия</span>
+              <h2 class="card__name">Huila</h2>
+              <p class="card__notes">карамель · орех · какао</p>
+              <div class="card__footer">
+                <span class="card__price">820 ₽</span>
+                <span class="card__weight">250 г</span>
+              </div>
+            </div>
+          </a>
+          <button class="card__btn" type="button">В корзину</button>
+        </article>
+      </li>
+
+      <li class="card">
+        <article class="card__inner">
+          <a href="#" class="card__link" aria-label="Бразилия Santos, 1 кг">
+            <figure class="card__media card__media--brazil">
+              <span class="card__badge card__badge--sale">−15%</span>
+              <img
+                src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&h=750&fit=crop&q=80"
+                alt="Пачка кофе Бразилия Santos"
+                width="600"
+                height="750"
+                loading="lazy"
+              >
+            </figure>
+            <div class="card__body">
+              <span class="card__origin">Бразилия</span>
+              <h2 class="card__name">Santos</h2>
+              <p class="card__notes">шоколад · миндаль · сливки</p>
+              <div class="card__footer">
+                <span class="card__price">
+                  <s class="card__price-old">2 400 ₽</s>
+                  2 040 ₽
+                </span>
+                <span class="card__weight">1 кг</span>
+              </div>
+            </div>
+          </a>
+          <button class="card__btn" type="button">В корзину</button>
+        </article>
+      </li>
+
+      <li class="card">
+        <article class="card__inner">
+          <a href="#" class="card__link" aria-label="Кения AA, 250 г">
+            <figure class="card__media card__media--kenya">
+              <img
+                src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&h=750&fit=crop&q=80"
+                alt="Пачка кофе Кения AA"
+                width="600"
+                height="750"
+                loading="lazy"
+              >
+            </figure>
+            <div class="card__body">
+              <span class="card__origin">Кения</span>
+              <h2 class="card__name">AA Nyeri</h2>
+              <p class="card__notes">чёрная смородина · цитрус · мед</p>
+              <div class="card__footer">
+                <span class="card__price">950 ₽</span>
+                <span class="card__weight">250 г</span>
+              </div>
+            </div>
+          </a>
+          <button class="card__btn" type="button">В корзину</button>
+        </article>
+      </li>
+
+      <li class="card">
+        <article class="card__inner">
+          <a href="#" class="card__link" aria-label="Гватемала Antigua, 250 г">
+            <figure class="card__media card__media--guatemala">
+              <img
+                src="https://images.unsplash.com/photo-1511920170033-f8396924c348?w=600&h=750&fit=crop&q=80"
+                alt="Пачка кофе Гватемала Antigua"
+                width="600"
+                height="750"
+                loading="lazy"
+              >
+            </figure>
+            <div class="card__body">
+              <span class="card__origin">Гватемала</span>
+              <h2 class="card__name">Antigua</h2>
+              <p class="card__notes">дым · специи · тёмный шоколад</p>
+              <div class="card__footer">
+                <span class="card__price">870 ₽</span>
+                <span class="card__weight">250 г</span>
+              </div>
+            </div>
+          </a>
+          <button class="card__btn" type="button">В корзину</button>
+        </article>
+      </li>
+
+      <li class="card">
+        <article class="card__inner">
+          <a href="#" class="card__link" aria-label="Коста-Рика Tarrazú, 250 г">
+            <figure class="card__media card__media--costa">
+              <img
+                src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=600&h=750&fit=crop&q=80"
+                alt="Пачка кофе Коста-Рика Tarrazú"
+                width="600"
+                height="750"
+                loading="lazy"
+              >
+            </figure>
+            <div class="card__body">
+              <span class="card__origin">Коста-Рика</span>
+              <h2 class="card__name">Tarrazú</h2>
+              <p class="card__notes">яблоко · карамель · ваниль</p>
+              <div class="card__footer">
+                <span class="card__price">840 ₽</span>
+                <span class="card__weight">250 г</span>
+              </div>
+            </div>
+          </a>
+          <button class="card__btn" type="button">В корзину</button>
+        </article>
+      </li>
+
+      <li class="card">
+        <article class="card__inner">
+          <a href="#" class="card__link" aria-label="Декаф Colombia, 250 г">
+            <figure class="card__media card__media--decaf">
+              <span class="card__badge">Декаф</span>
+              <img
+                src="https://images.unsplash.com/photo-1611854779393-48a947c4b9b2?w=600&h=750&fit=crop&q=80"
+                alt="Пачка декаф кофе Colombia"
+                width="600"
+                height="750"
+                loading="lazy"
+              >
+            </figure>
+            <div class="card__body">
+              <span class="card__origin">Колумбия</span>
+              <h2 class="card__name">Swiss Water</h2>
+              <p class="card__notes">орех · какао · сухофрукты</p>
+              <div class="card__footer">
+                <span class="card__price">920 ₽</span>
+                <span class="card__weight">250 г</span>
+              </div>
+            </div>
+          </a>
+          <button class="card__btn" type="button">В корзину</button>
+        </article>
+      </li>
+
+      <li class="card">
+        <article class="card__inner">
+          <a href="#" class="card__link" aria-label="Набор дегустация, 4 × 100 г">
+            <figure class="card__media card__media--set">
+              <span class="card__badge">Хит</span>
+              <img
+                src="https://images.unsplash.com/photo-1461023058943-f07a80b404fe?w=600&h=750&fit=crop&q=80"
+                alt="Набор дегустационного кофе"
+                width="600"
+                height="750"
+                loading="lazy"
+              >
+            </figure>
+            <div class="card__body">
+              <span class="card__origin">Набор</span>
+              <h2 class="card__name">Дегустация</h2>
+              <p class="card__notes">4 сорта · 100 г каждый</p>
+              <div class="card__footer">
+                <span class="card__price">1 490 ₽</span>
+                <span class="card__weight">400 г</span>
+              </div>
+            </div>
+          </a>
+          <button class="card__btn" type="button">В корзину</button>
+        </article>
+      </li>
+    </ul>
+
+    <footer class="catalog__footer">
+      <a href="#" class="catalog__more">Смотреть весь каталог</a>
+    </footer>
+  </main>
+</body>
+</html>
