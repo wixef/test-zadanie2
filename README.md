@@ -18,9 +18,6 @@ open index.html
 python3 -m http.server 8080
 ```
 
-## Деплой на GitHub Pages
+## Демо
 
-1. Создайте репозиторий на GitHub
-2. Загрузите файлы
-3. Settings → Pages → Source: Deploy from branch → `main` / `/ (root)`
-4. Ссылка будет: `https://<username>.github.io/<repo>/`
+https://wixef.github.io/test-zadanie2/
